@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LockSafe - Password Manager</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">LockSafe</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="container">
+        <div class="leftb">
+            <h2>Add Password</h2>
+            <form id="passwordForm" action="/submit" method="post">
+                <label for="website">Website:</label>
+                <input type="text" id="website" name="website" required>
+                <br><br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" required>
+                <br><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="rightb">
+            <h1>LockSafe Password Manager</h1>
+            <p>Your passwords are safe and secure with us.</p>
+            <h2>Your Passwords</h2>
+            <table id="passwordTable">
+                <tr>
+                    <th>Website</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About LockSafe</h2>
+        <p>LockSafe is a secure password manager designed to help you keep your sensitive information safe. We ensure the highest standards of encryption and user privacy to guarantee the safety of your credentials.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
